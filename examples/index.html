@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tiny Slide</title>
+    <link href="../css/tinyslide.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js" /></script>
+    <script src="../js/tinyslide.js" /></script>
+
+    <style type="text/css">
+      .text{
+        font-size: 50px;
+        opacity: 0.6;
+        font-family: italic;
+        border: transparent;
+        background-color: #626556;
+        bottom:0; 
+        margin-bottom: 250px;
+        margin-right: 500px;
+      }
+      h3{
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section id="tiny" class="tinyslide">
+      <aside class="slides">
+        <figure>
+          <img src="images/Black.jpg" alt="" />
+          <figcaption>
+            <h3 style="color:white">You can edit your Slide Text</h3>
+              <textarea class="text" style="color:white">This is the First Slide</textarea>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/slide2.jpg" alt="" />
+          <figcaption>
+            <h3 style="color:white">You can edit your Slide Text</h3>
+              <textarea class="text" style="color:white">This is the First Slide</textarea>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/Black3.jpg" alt="" />
+          <figcaption>
+            <h3 style="color:white">You can edit your Slide Text</h3>
+              <textarea class="text" style="color:white">This is the First Slide</textarea>
+          </figcaption>
+        </figure>
+      </aside>
+    </section>
+    <script>
+      var tiny = $('#tiny').tiny().data('api_tiny');
+    </script>
+
+  </body>
+</html>
